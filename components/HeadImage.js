@@ -1,11 +1,17 @@
 import Image from "next/image";
 import React from "react";
 import Istanbul from "../assets/istanbul.png";
+import BuyNow from "./BuyNow";
+import MemberCardGroup from "./MemberCardGroup";
+import HeadText from "./HeadText";
+
 const HeadImage = () => {
   return (
     <div className="flex w-full h-[586px] relative">
       <Image src={Istanbul} fill />
-      <div className="absolute bg-red-300 t">title</div>
+      <HeadText />
+      <BuyNow />
+      <MemberCardGroup />
     </div>
   );
 };

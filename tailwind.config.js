@@ -17,6 +17,9 @@ module.exports = {
       },
       colors: {
         "icons-green": "#00A79D",
+        silver: "#8F8D8D",
+        gold: "#E0A93F",
+        diamond: "#5962E4",
       },
     },
   },
