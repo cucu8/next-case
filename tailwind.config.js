@@ -21,6 +21,7 @@ module.exports = {
         silver: "#8F8D8D",
         gold: "#E0A93F",
         diamond: "#5962E4",
+        storeBg: "#fafafa",
       },
     },
   },

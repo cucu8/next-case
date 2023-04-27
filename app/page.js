@@ -3,6 +3,7 @@ import SubNav from "@/components/SubNav";
 import SubPageContainers from "@/containers/SubPageContainers";
 import SpecialContainer from "@/containers/SpecialContainer";
 import { attractionList, diningList } from "@/constants";
+import StoreContainer from "@/containers/StoreContainer";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <SpecialContainer type="green" />
       <SubPageContainers type="attraction" list={attractionList} />
       <SpecialContainer type="blue" />
+      <StoreContainer />
     </main>
   );
 }
