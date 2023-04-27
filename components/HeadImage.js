@@ -7,7 +7,7 @@ import HeadText from "./HeadText";
 
 const HeadImage = () => {
   return (
-    <div className="flex w-full h-[586px] relative">
+    <div className="flex h-[586px] relative">
       <Image src={Istanbul} fill />
       <HeadText />
       <BuyNow />

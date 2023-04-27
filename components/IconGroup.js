@@ -16,7 +16,10 @@ const IconGroup = () => {
     <div className="bg-icons-green rounded-xl flex flex-row w-[200px] h-[40px] items-center gap-5 justify-start pl-5 relative">
       {icons.map((icon, i) => {
         return (
-          <div className="grid grid-cols-1 divide-y-2 gap-1 rounded cursor-pointer relative">
+          <div
+            className="grid grid-cols-1 divide-y-2 gap-1 rounded cursor-pointer relative"
+            key={i}
+          >
             <span
               onClick={() => {
                 setActive(i);

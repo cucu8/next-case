@@ -1,22 +1,18 @@
 import HeadImage from "@/components/HeadImage";
-import Link from "next/link";
+import SubNav from "@/components/SubNav";
+import SubPageContainers from "@/containers/SubPageContainers";
+import SpecialContainer from "@/containers/SpecialContainer";
+import { attractionList, diningList } from "@/constants";
 
 export default function Home() {
   return (
     <main>
       <HeadImage />
-      <div>asdsad</div>
-      {/* <Link href="/restaurant/1">1</Link>
-      <Link href="/restaurant/2">2</Link>
-      <Link href="/restaurant/3">3</Link>
-      <Link
-        className="bg-red-400 p-5"
-        href={{
-          pathname: "/restaurant/4",
-        }}
-      >
-        4
-      </Link> */}
+      <SubNav />
+      <SubPageContainers type="dining" list={diningList} />
+      <SpecialContainer type="green" />
+      <SubPageContainers type="attraction" list={attractionList} />
+      <SpecialContainer type="blue" />
     </main>
   );
 }
